@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miel Bakery </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#" class="nav__logo">🥐 Miel</a>
+  <ul class="nav__links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#order" class="order-btn">Order Now</a></li>
+  </ul>
+  <button class="nav__toggle" popovertarget="mob-menu" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mob-menu" popover>
+  <div class="mob__header">
+    <span class="mob__logo">🥐 Miel</span>
+    <button class="mob__close" popovertarget="mob-menu" popovertargetaction="hide">✕</button>
+  </div>
+  <ul class="mob__links">
+    <li><a href="#menu"    popovertarget="mob-menu" popovertargetaction="hide">Menu</a></li>
+    <li><a href="#about"   popovertarget="mob-menu" popovertargetaction="hide">Our Story</a></li>
+    <li><a href="#reviews" popovertarget="mob-menu" popovertargetaction="hide">Reviews</a></li>
+    <li><a href="#order"   popovertarget="mob-menu" popovertargetaction="hide">Order Now</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div>
+    <span class="hero__tag">🌸 Baked Fresh Every Morning</span>
+    <h1 class="hero__title">Baked with love,<br><em>served with joy.</em></h1>
+    <p class="hero__sub">Artisan croissants, dreamy cakes, and warm sourdough crafted daily from the finest ingredients, just for you.</p>
+    <div class="hero__btns">
+      <a href="#menu"  class="btn-pink">See Our Bakes</a>
+      <a href="#order" class="btn-outline">Order Online</a>
+    </div>
+  </div>
+
+  <div class="hero__imgs">
+    <div class="hero-img hero-img--wide">
+      <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=800&q=80" alt="Fresh croissants" loading="lazy" />
+      <span class="hero-img__badge">Today's Special</span>
+      <span class="hero-img__label">Butter Croissants</span>
+    </div>
+    <div class="hero-img">
+      <img src="https://plus.unsplash.com/premium_photo-1713447395823-2e0b40b75a89?q=80&w=382&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cake" loading="lazy" />
+      <span class="hero-img__label">Strawberry Cake</span>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1599785209770-3ea3cd883c37?q=80&w=386&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cupcakes" loading="lazy" />
+      <span class="hero-img__label">Pink Cupcakes</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="strip">
+  <div class="strip__inner">
+    <span>Fresh Croissants</span><span>Artisan Cakes</span><span>Sourdough Bread</span>
+    <span>Cupcakes</span><span>Cinnamon Rolls</span><span>Danish Pastries</span>
+    <span>Macarons</span><span>Brownies</span><span>Cheesecake</span>
+    <span>Fresh Croissants</span><span>Artisan Cakes</span><span>Sourdough Bread</span>
+    <span>Cupcakes</span><span>Cinnamon Rolls</span><span>Danish Pastries</span>
+    <span>Macarons</span><span>Brownies</span><span>Cheesecake</span>
+  </div>
+</div>
+
+<!-- MENU -->
+<section class="bestsellers" id="menu">
+  <p class="sec-label">Our Menu</p>
+  <h2 class="sec-title">Everything tastes better<br>when it's freshly baked.</h2>
+  <div class="tabs">
+    <button class="tab active">All</button>
+    <button class="tab">Breads</button>
+    <button class="tab">Cakes</button>
+    <button class="tab">Pastries</button>
+    <button class="tab">Cookies</button>
+  </div>
+  <div class="items-grid">
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80" alt="Butter Croissant" loading="lazy" />
+        <span class="item-card__tag">Bestseller</span>
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Butter Croissant</div>
+        <div class="item-card__desc">Flaky, golden layers with rich French butter baked fresh at 6am</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 280</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://plus.unsplash.com/premium_photo-1713447395823-2e0b40b75a89?q=80&w=382&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Strawberry Cake" loading="lazy" />
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Strawberry Cake</div>
+        <div class="item-card__desc">Light sponge, fresh strawberries, whipped cream frosting</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 2,800</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://plus.unsplash.com/premium_photo-1711448429044-8b5c0f7f3254?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pink Velvet Cupcake" loading="lazy" />
+        <span class="item-card__tag">New</span>
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Pink Velvet Cupcake</div>
+        <div class="item-card__desc">Moist pink sponge with cream cheese frosting & sprinkles</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 300</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://images.unsplash.com/photo-1559811814-e2c57b5e69df?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sourdough Loaf" loading="lazy" />
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Sourdough Loaf</div>
+        <div class="item-card__desc">48-hour fermented, stone-baked with a crispy crust</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 650</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" alt="Choco Chip Cookies" loading="lazy" />
+        <span class="item-card__tag">Bestseller</span>
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Choco Chip Cookies</div>
+        <div class="item-card__desc">Thick, chewy cookies loaded with dark chocolate chunks</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 250</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=400&q=80" alt="Cinnamon Danish" loading="lazy" />
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Cinnamon Danish</div>
+        <div class="item-card__desc">Spiral pastry with cinnamon sugar filling & vanilla glaze</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 420</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=400&q=80" alt="Classic Cheesecake" loading="lazy" />
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Classic Cheesecake</div>
+        <div class="item-card__desc">Creamy NY-style cheesecake on a buttery graham cracker crust</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 450</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-card__img">
+        <img src="https://plus.unsplash.com/premium_photo-1676473229512-903bbbb1dd1d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Strawberry Doughnut" loading="lazy" />
+        <span class="item-card__tag">New</span>
+      </div>
+      <div class="item-card__body">
+        <div class="item-card__name">Strawberry Doughnut</div>
+        <div class="item-card__desc">Fluffy ring doughnut dipped in strawberry glaze & sprinkles</div>
+        <div class="item-card__footer"><span class="item-card__price">Rs. 200</span><button class="item-card__btn">Add +</button></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div>
+    <p class="sec-label">Our Story</p>
+    <h2 class="sec-title">A little bakery with a lot of heart.</h2>
+    <p class="about__text">Miel started in 2015 from a tiny kitchen in Karachi  one oven, one baker, and a dream to bring European-style artisan baking to Pakistan. Today we bake over 500 items daily, but every piece still gets the same love as that very first croissant.</p>
+    <div class="about__stats">
+      <div class="astat"><div class="astat__num">9+</div><div class="astat__label">Years baking</div></div>
+      <div class="astat"><div class="astat__num">500+</div><div class="astat__label">Items daily</div></div>
+      <div class="astat"><div class="astat__num">4.9★</div><div class="astat__label">Happy customers</div></div>
+      <div class="astat"><div class="astat__num">50k+</div><div class="astat__label">Orders delivered</div></div>
+    </div>
+  </div>
+  <div class="about__imgs">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80" alt="Baking" loading="lazy" />
+    </div>
+    <div class="about-img about-img--tall">
+      <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&q=80" alt="Bakery inside" loading="lazy" />
+    </div>
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=400&q=80" alt="Baker" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <p class="sec-label">Reviews</p>
+  <h2 class="sec-title">Our customers love us.</h2>
+  <div class="reviews__grid">
+    <div class="rcard">
+      <div class="rcard__stars">★★★★★</div>
+      <p class="rcard__text">"The butter croissants are absolutely divine flaky on the outside, soft inside. I order a dozen every Saturday morning!"</p>
+      <div class="rcard__author">Ayesha K. <span class="rcard__city">· DHA, Karachi</span></div>
+    </div>
+    <div class="rcard">
+      <div class="rcard__stars">★★★★★</div>
+      <p class="rcard__text">"Ordered a custom birthday cake it was not only gorgeous but tasted incredible. Everyone at the party wanted the recipe!"</p>
+      <div class="rcard__author">Maryam S. <span class="rcard__city">· Clifton, Karachi</span></div>
+    </div>
+    <div class="rcard">
+      <div class="rcard__stars">★★★★★</div>
+      <p class="rcard__text">"Best sourdough in Karachi, no competition. The crust crunch and the chewy interior  perfection. Miel is my weekly staple."</p>
+      <div class="rcard__author">Bilal R. <span class="rcard__city">· Gulshan, Karachi</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER CTA -->
+<section class="order-cta" id="order">
+  <h2>Fresh bakes, delivered to you. 🚚</h2>
+  <p>Enter your number and we'll WhatsApp you our daily menu every morning.</p>
+  <div class="order-form">
+    <input type="tel" placeholder="Your WhatsApp number" />
+    <button class="btn-white">Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer-wrap">
+  <div class="footer">
+    <div>
+      <div class="footer__logo">🥐 Miel Bakery</div>
+      <p class="footer__desc">Artisan bakes crafted with love every morning in Karachi since 2015.</p>
+    </div>
+    <div>
+      <p class="footer__head">Menu</p>
+      <ul class="footer__list">
+        <li><a href="#">Breads</a></li>
+        <li><a href="#">Cakes</a></li>
+        <li><a href="#">Pastries</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__head">Visit Us</p>
+      <ul class="footer__list">
+        <li><a href="#">Phase 6, DHA Karachi</a></li>
+        <li><a href="#">Tue–Sun: 7am – 9pm</a></li>
+        <li><a href="#">+92 311 2345678</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__head">Follow</p>
+      <ul class="footer__list">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Miel Bakery. All rights reserved.</span>
+    <span>Made with 💗 in Karachi</span>
+  </div>
+</div>
+
+
+</body>
+</html>
+
